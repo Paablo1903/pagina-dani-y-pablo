@@ -1,0 +1,58 @@
+body {
+    background-image: url("D:\fotos\ladrillos.jpg");
+    background-attachment: fixed;
+    text-align: center;
+}
+
+div:first-of-type {
+    box-sizing: border-box;
+    padding-bottom: 200px;
+    background-image: url("D:\fotos\Hogwarts.webp");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center;
+}
+
+div:not(:first-of-type) {
+    box-sizing: border-box;
+    background-image: url("D:\fotos\madera.jpg");
+    width: 300px;
+    height: 270px;
+    margin: 2%;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px black;
+}
+
+div:not(:first-of-type):hover {
+    opacity: 0.5;
+    transition-duration: 800ms;
+}
+
+div:not(:first-of-type):active {
+    transition: 800ms;
+}
+
+article {
+    box-sizing: content-box;
+    background-color: rgb(255, 240, 158);
+    border-radius: 20px;
+    width: 250px;
+    height: 220px;
+    padding-left: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-left: 22px;
+    padding-bottom: 3px;
+    box-shadow: 10px 10px 40px black inset;
+}
+
+h2 span::before {
+    content: url("D:\fotos\mano.png");
+}
+
+div:not(:first-of-type)::first-letter,
+h2 span {
+    color: red;
+}
